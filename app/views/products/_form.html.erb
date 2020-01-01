@@ -1,0 +1,132 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color1 %>
+    <%= form.text_field :color1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color2 %>
+    <%= form.text_field :color2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color3 %>
+    <%= form.text_field :color3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color4 %>
+    <%= form.text_field :color4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color5 %>
+    <%= form.text_field :color5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size1 %>
+    <%= form.text_field :size1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size2 %>
+    <%= form.text_field :size2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size3 %>
+    <%= form.text_field :size3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size4 %>
+    <%= form.text_field :size4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size5 %>
+    <%= form.text_field :size5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.text_field :quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :saleprice %>
+    <%= form.text_field :saleprice %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image1 %>
+    <%= form.text_field :image1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image2 %>
+    <%= form.text_field :image2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image3 %>
+    <%= form.text_field :image3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image4 %>
+    <%= form.text_field :image4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image5 %>
+    <%= form.text_field :image5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :review %>
+    <%= form.text_field :review %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.number_field :rating %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
