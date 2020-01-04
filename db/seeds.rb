@@ -144,7 +144,7 @@ Product.create(
 Product.create(
   category: 'Grips',
   brand: 'Colony',
-  title: 'grip-1',
+  title: 'cgrip-1',
   description: 'lorem ipsum dolar',
   color1: 'color1',
   color2: 'color2',
@@ -172,7 +172,7 @@ Product.create(
 Product.create(
   category: 'Grips',
   brand: 'Colony',
-  title: 'grip-2',
+  title: 'cgrip-2',
   description: 'lorem ipsum dolar',
   color1: 'color1',
   color2: 'color2',
@@ -200,7 +200,7 @@ Product.create(
 Product.create(
   category: 'Grips',
   brand: 'Colony',
-  title: 'grip-3',
+  title: 'cgrip-3',
   description: 'lorem ipsum dolar',
   color1: 'color1',
   color2: 'color2',
@@ -228,7 +228,7 @@ Product.create(
 Product.create(
   category: 'Grips',
   brand: 'Colony',
-  title: 'grip-4',
+  title: 'cgrip-4',
   description: 'lorem ipsum dolar',
   color1: 'color1',
   color2: 'color2',
@@ -256,7 +256,7 @@ Product.create(
 Product.create(
   category: 'Grips',
   brand: 'Colony',
-  title: 'grip-5',
+  title: 'cgrip-5',
   description: 'lorem ipsum dolar',
   color1: 'color1',
   color2: 'color2',
