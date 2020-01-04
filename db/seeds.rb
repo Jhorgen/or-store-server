@@ -26,7 +26,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -54,7 +54,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -82,7 +82,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -110,7 +110,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -138,7 +138,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -166,7 +166,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -194,7 +194,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -222,7 +222,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -250,7 +250,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -278,7 +278,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -306,7 +306,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -334,7 +334,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -362,7 +362,7 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
 
 Product.create(
@@ -390,5 +390,5 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 0,
+  checkoutquantity: 1,
 )
