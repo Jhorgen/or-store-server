@@ -4,7 +4,7 @@ Product.reset_pk_sequence
 Product.create(
   category: 'Grips',
   brand: 'Fox',
-  title: 'grip-1',
+  title: 'grip 1 test',
   description: 'lorem ipsum dolar',
   color1: 'Red',
   color2: 'Blue',
