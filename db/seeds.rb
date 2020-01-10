@@ -390,5 +390,5 @@ Product.create(
   image5: '',
   review: '',
   rating: '',
-  checkoutquantity: 1,
+  checkoutquantity: 0,
 )

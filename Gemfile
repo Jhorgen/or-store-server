@@ -23,7 +23,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'rack-cors'
-
+gem 'stripe'
 gem 'activerecord-reset-pk-sequence'
 
 # Use Redis adapter to run Action Cable in production
