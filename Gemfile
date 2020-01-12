@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors'
 gem 'stripe'
 gem 'activerecord-reset-pk-sequence'
+gem 'dotenv-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
