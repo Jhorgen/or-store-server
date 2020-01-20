@@ -1,0 +1,497 @@
+<%= form_with(model: purchase, local: true) do |form| %>
+  <% if purchase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(purchase.errors.count, "error") %> prohibited this purchase from being saved:</h2>
+
+      <ul>
+      <% purchase.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :firstname %>
+    <%= form.text_field :firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address2 %>
+    <%= form.text_field :address2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand1 %>
+    <%= form.text_field :brand1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title1 %>
+    <%= form.text_field :title1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity1 %>
+    <%= form.number_field :quantity1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption1 %>
+    <%= form.text_field :selectedoption1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price1 %>
+    <%= form.text_field :price1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand2 %>
+    <%= form.text_field :brand2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title2 %>
+    <%= form.text_field :title2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity2 %>
+    <%= form.number_field :quantity2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption2 %>
+    <%= form.text_field :selectedoption2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price2 %>
+    <%= form.text_field :price2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand3 %>
+    <%= form.text_field :brand3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title3 %>
+    <%= form.text_field :title3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity3 %>
+    <%= form.number_field :quantity3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption3 %>
+    <%= form.text_field :selectedoption3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price3 %>
+    <%= form.text_field :price3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand4 %>
+    <%= form.text_field :brand4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title4 %>
+    <%= form.text_field :title4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity4 %>
+    <%= form.number_field :quantity4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption4 %>
+    <%= form.text_field :selectedoption4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price4 %>
+    <%= form.text_field :price4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand5 %>
+    <%= form.text_field :brand5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title5 %>
+    <%= form.text_field :title5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity5 %>
+    <%= form.number_field :quantity5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption5 %>
+    <%= form.text_field :selectedoption5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price5 %>
+    <%= form.text_field :price5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand6 %>
+    <%= form.text_field :brand6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title6 %>
+    <%= form.text_field :title6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity6 %>
+    <%= form.number_field :quantity6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption6 %>
+    <%= form.text_field :selectedoption6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price6 %>
+    <%= form.text_field :price6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand7 %>
+    <%= form.text_field :brand7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title7 %>
+    <%= form.text_field :title7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity7 %>
+    <%= form.number_field :quantity7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption7 %>
+    <%= form.text_field :selectedoption7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price7 %>
+    <%= form.text_field :price7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand8 %>
+    <%= form.text_field :brand8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title8 %>
+    <%= form.text_field :title8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity8 %>
+    <%= form.number_field :quantity8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption8 %>
+    <%= form.text_field :selectedoption8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price8 %>
+    <%= form.text_field :price8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand9 %>
+    <%= form.text_field :brand9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title9 %>
+    <%= form.text_field :title9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity9 %>
+    <%= form.number_field :quantity9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption9 %>
+    <%= form.text_field :selectedoption9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price9 %>
+    <%= form.text_field :price9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand10 %>
+    <%= form.text_field :brand10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title10 %>
+    <%= form.text_field :title10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity10 %>
+    <%= form.number_field :quantity10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption10 %>
+    <%= form.text_field :selectedoption10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price10 %>
+    <%= form.text_field :price10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand11 %>
+    <%= form.text_field :brand11 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title11 %>
+    <%= form.text_field :title11 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity11 %>
+    <%= form.number_field :quantity11 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption11 %>
+    <%= form.text_field :selectedoption11 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price11 %>
+    <%= form.text_field :price11 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand12 %>
+    <%= form.text_field :brand12 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title12 %>
+    <%= form.text_field :title12 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity12 %>
+    <%= form.number_field :quantity12 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption12 %>
+    <%= form.text_field :selectedoption12 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price12 %>
+    <%= form.text_field :price12 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand13 %>
+    <%= form.text_field :brand13 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title13 %>
+    <%= form.text_field :title13 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity13 %>
+    <%= form.number_field :quantity13 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption13 %>
+    <%= form.text_field :selectedoption13 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price13 %>
+    <%= form.text_field :price13 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand14 %>
+    <%= form.text_field :brand14 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title14 %>
+    <%= form.text_field :title14 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity14 %>
+    <%= form.number_field :quantity14 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption14 %>
+    <%= form.text_field :selectedoption14 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price14 %>
+    <%= form.text_field :price14 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand15 %>
+    <%= form.text_field :brand15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title15 %>
+    <%= form.text_field :title15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity15 %>
+    <%= form.number_field :quantity15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption15 %>
+    <%= form.text_field :selectedoption15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price15 %>
+    <%= form.text_field :price15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand16 %>
+    <%= form.text_field :brand16 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title16 %>
+    <%= form.text_field :title16 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity16 %>
+    <%= form.number_field :quantity16 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption16 %>
+    <%= form.text_field :selectedoption16 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price16 %>
+    <%= form.text_field :price16 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand17 %>
+    <%= form.text_field :brand17 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title17 %>
+    <%= form.text_field :title17 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity17 %>
+    <%= form.number_field :quantity17 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption17 %>
+    <%= form.text_field :selectedoption17 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price17 %>
+    <%= form.text_field :price17 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand18 %>
+    <%= form.text_field :brand18 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title18 %>
+    <%= form.text_field :title18 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity18 %>
+    <%= form.number_field :quantity18 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selectedoption18 %>
+    <%= form.text_field :selectedoption18 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price18 %>
+    <%= form.text_field :price18 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+    <h2>Thank you for your purchase!</h2>
+
+    <% if @purchase.brand1 then %>
+    <div>
+    <%= @purchase.brand1 %>
+    <%= @purchase.title1 %>
+    <%= @purchase.quantity1 %>
+    </div>
+    <% end %>
+<br/>
+    <% if @purchase.brand2 then %>
+
+    <%= @purchase.brand2 %>
+    <%= @purchase.title2 %>
+    <%= @purchase.quantity2 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand3 then %>
+
+    <%= @purchase.brand3 %>
+    <%= @purchase.title3 %>
+    <%= @purchase.quantity3 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand4 then %>
+
+    <%= @purchase.brand4 %>
+    <%= @purchase.title4 %>
+    <%= @purchase.quantity4 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand5 then %>
+
+    <%= @purchase.brand5 %>
+    <%= @purchase.title5 %>
+    <%= @purchase.quantity5 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand6 then %>
+
+    <%= @purchase.brand6 %>
+    <%= @purchase.title6 %>
+    <%= @purchase.quantity6 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand7 then %>
+
+    <%= @purchase.brand7 %>
+    <%= @purchase.title7 %>
+    <%= @purchase.quantity7 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand8 then %>
+
+    <%= @purchase.brand8 %>
+    <%= @purchase.title8 %>
+    <%= @purchase.quantity8 %>
+
+    <% end %>
+    <br/>
+
+    <% if @purchase.brand9 then %>
+
+    <%= @purchase.brand9 %>
+    <%= @purchase.title9 %>
+    <%= @purchase.quantity9 %>
+
+    <% end %>
+    <br/>
+  </body>

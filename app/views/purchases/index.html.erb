@@ -1,0 +1,217 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Purchases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Amount</th>
+      <th>Email</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Address</th>
+      <th>Address2</th>
+      <th>Brand1</th>
+      <th>Title1</th>
+      <th>Quantity1</th>
+      <th>Selectedoption1</th>
+      <th>Price1</th>
+      <th>Brand2</th>
+      <th>Title2</th>
+      <th>Quantity2</th>
+      <th>Selectedoption2</th>
+      <th>Price2</th>
+      <th>Brand3</th>
+      <th>Title3</th>
+      <th>Quantity3</th>
+      <th>Selectedoption3</th>
+      <th>Price3</th>
+      <th>Brand4</th>
+      <th>Title4</th>
+      <th>Quantity4</th>
+      <th>Selectedoption4</th>
+      <th>Price4</th>
+      <th>Brand5</th>
+      <th>Title5</th>
+      <th>Quantity5</th>
+      <th>Selectedoption5</th>
+      <th>Price5</th>
+      <th>Brand6</th>
+      <th>Title6</th>
+      <th>Quantity6</th>
+      <th>Selectedoption6</th>
+      <th>Price6</th>
+      <th>Brand7</th>
+      <th>Title7</th>
+      <th>Quantity7</th>
+      <th>Selectedoption7</th>
+      <th>Price7</th>
+      <th>Brand8</th>
+      <th>Title8</th>
+      <th>Quantity8</th>
+      <th>Selectedoption8</th>
+      <th>Price8</th>
+      <th>Brand9</th>
+      <th>Title9</th>
+      <th>Quantity9</th>
+      <th>Selectedoption9</th>
+      <th>Price9</th>
+      <th>Brand10</th>
+      <th>Title10</th>
+      <th>Quantity10</th>
+      <th>Selectedoption10</th>
+      <th>Price10</th>
+      <th>Brand11</th>
+      <th>Title11</th>
+      <th>Quantity11</th>
+      <th>Selectedoption11</th>
+      <th>Price11</th>
+      <th>Brand12</th>
+      <th>Title12</th>
+      <th>Quantity12</th>
+      <th>Selectedoption12</th>
+      <th>Price12</th>
+      <th>Brand13</th>
+      <th>Title13</th>
+      <th>Quantity13</th>
+      <th>Selectedoption13</th>
+      <th>Price13</th>
+      <th>Brand14</th>
+      <th>Title14</th>
+      <th>Quantity14</th>
+      <th>Selectedoption14</th>
+      <th>Price14</th>
+      <th>Brand15</th>
+      <th>Title15</th>
+      <th>Quantity15</th>
+      <th>Selectedoption15</th>
+      <th>Price15</th>
+      <th>Brand16</th>
+      <th>Title16</th>
+      <th>Quantity16</th>
+      <th>Selectedoption16</th>
+      <th>Price16</th>
+      <th>Brand17</th>
+      <th>Title17</th>
+      <th>Quantity17</th>
+      <th>Selectedoption17</th>
+      <th>Price17</th>
+      <th>Brand18</th>
+      <th>Title18</th>
+      <th>Quantity18</th>
+      <th>Selectedoption18</th>
+      <th>Price18</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @purchases.each do |purchase| %>
+      <tr>
+        <td><%= purchase.amount %></td>
+        <td><%= purchase.email %></td>
+        <td><%= purchase.firstname %></td>
+        <td><%= purchase.lastname %></td>
+        <td><%= purchase.address %></td>
+        <td><%= purchase.address2 %></td>
+        <td><%= purchase.brand1 %></td>
+        <td><%= purchase.title1 %></td>
+        <td><%= purchase.quantity1 %></td>
+        <td><%= purchase.selectedoption1 %></td>
+        <td><%= purchase.price1 %></td>
+        <td><%= purchase.brand2 %></td>
+        <td><%= purchase.title2 %></td>
+        <td><%= purchase.quantity2 %></td>
+        <td><%= purchase.selectedoption2 %></td>
+        <td><%= purchase.price2 %></td>
+        <td><%= purchase.brand3 %></td>
+        <td><%= purchase.title3 %></td>
+        <td><%= purchase.quantity3 %></td>
+        <td><%= purchase.selectedoption3 %></td>
+        <td><%= purchase.price3 %></td>
+        <td><%= purchase.brand4 %></td>
+        <td><%= purchase.title4 %></td>
+        <td><%= purchase.quantity4 %></td>
+        <td><%= purchase.selectedoption4 %></td>
+        <td><%= purchase.price4 %></td>
+        <td><%= purchase.brand5 %></td>
+        <td><%= purchase.title5 %></td>
+        <td><%= purchase.quantity5 %></td>
+        <td><%= purchase.selectedoption5 %></td>
+        <td><%= purchase.price5 %></td>
+        <td><%= purchase.brand6 %></td>
+        <td><%= purchase.title6 %></td>
+        <td><%= purchase.quantity6 %></td>
+        <td><%= purchase.selectedoption6 %></td>
+        <td><%= purchase.price6 %></td>
+        <td><%= purchase.brand7 %></td>
+        <td><%= purchase.title7 %></td>
+        <td><%= purchase.quantity7 %></td>
+        <td><%= purchase.selectedoption7 %></td>
+        <td><%= purchase.price7 %></td>
+        <td><%= purchase.brand8 %></td>
+        <td><%= purchase.title8 %></td>
+        <td><%= purchase.quantity8 %></td>
+        <td><%= purchase.selectedoption8 %></td>
+        <td><%= purchase.price8 %></td>
+        <td><%= purchase.brand9 %></td>
+        <td><%= purchase.title9 %></td>
+        <td><%= purchase.quantity9 %></td>
+        <td><%= purchase.selectedoption9 %></td>
+        <td><%= purchase.price9 %></td>
+        <td><%= purchase.brand10 %></td>
+        <td><%= purchase.title10 %></td>
+        <td><%= purchase.quantity10 %></td>
+        <td><%= purchase.selectedoption10 %></td>
+        <td><%= purchase.price10 %></td>
+        <td><%= purchase.brand11 %></td>
+        <td><%= purchase.title11 %></td>
+        <td><%= purchase.quantity11 %></td>
+        <td><%= purchase.selectedoption11 %></td>
+        <td><%= purchase.price11 %></td>
+        <td><%= purchase.brand12 %></td>
+        <td><%= purchase.title12 %></td>
+        <td><%= purchase.quantity12 %></td>
+        <td><%= purchase.selectedoption12 %></td>
+        <td><%= purchase.price12 %></td>
+        <td><%= purchase.brand13 %></td>
+        <td><%= purchase.title13 %></td>
+        <td><%= purchase.quantity13 %></td>
+        <td><%= purchase.selectedoption13 %></td>
+        <td><%= purchase.price13 %></td>
+        <td><%= purchase.brand14 %></td>
+        <td><%= purchase.title14 %></td>
+        <td><%= purchase.quantity14 %></td>
+        <td><%= purchase.selectedoption14 %></td>
+        <td><%= purchase.price14 %></td>
+        <td><%= purchase.brand15 %></td>
+        <td><%= purchase.title15 %></td>
+        <td><%= purchase.quantity15 %></td>
+        <td><%= purchase.selectedoption15 %></td>
+        <td><%= purchase.price15 %></td>
+        <td><%= purchase.brand16 %></td>
+        <td><%= purchase.title16 %></td>
+        <td><%= purchase.quantity16 %></td>
+        <td><%= purchase.selectedoption16 %></td>
+        <td><%= purchase.price16 %></td>
+        <td><%= purchase.brand17 %></td>
+        <td><%= purchase.title17 %></td>
+        <td><%= purchase.quantity17 %></td>
+        <td><%= purchase.selectedoption17 %></td>
+        <td><%= purchase.price17 %></td>
+        <td><%= purchase.brand18 %></td>
+        <td><%= purchase.title18 %></td>
+        <td><%= purchase.quantity18 %></td>
+        <td><%= purchase.selectedoption18 %></td>
+        <td><%= purchase.price18 %></td>
+        <td><%= link_to 'Show', purchase %></td>
+        <td><%= link_to 'Edit', edit_purchase_path(purchase) %></td>
+        <td><%= link_to 'Destroy', purchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Purchase', new_purchase_path %>
