@@ -12,21 +12,21 @@ class Api::V1::ChargesController < ApplicationController
       customer = Stripe::Customer.create({
         :source => params[:charge][:token],
         :email => params[:charge][:email],
-        :description => params[:charge][:description]
+        :description => params[:charge][:description],
+        :name => params[:charge][:name],
       })
 
       charge = Stripe::Charge.create({
         :customer => customer.id,
         :amount => params[:charge][:amount],
         :currency => params[:charge][:currency],
-        :billing_details => params[:email]
         })
 
         rescue Stripe::CardError => e
           render json: { message: 'oops'}, status: :not_acceptable
 
     end
-    
+
   end
 
   def index
