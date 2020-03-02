@@ -5,7 +5,7 @@ class Api::V1::ChargesController < ApplicationController
 
   def create
 
-    Stripe.api_key = ENV["EXAMPLE_API_KEY"]
+    Stripe.api_key = ENV['TEMP_KEY']
 
     begin
 

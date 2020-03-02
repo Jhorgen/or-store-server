@@ -26,8 +26,8 @@ module OrStoreServer
       :address => "smtp.gmail.com",
       :domain => "myprojectdomain.com",
       :port => 587,
-      :user_name => Rails.application.secrets.email_user_name,
-      :password => Rails.application.secrets.email_password,
+      :user_name => ENV['EMAIL'],
+      :password => ENV['EMAIL_ACCESS'],
       :authentication => "plain",
       :enable_starttls_auto => true
     }
