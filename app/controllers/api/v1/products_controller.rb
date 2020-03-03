@@ -6,6 +6,7 @@ class Api::V1::ProductsController < ApplicationController
     .find_by_category(params[:category])
     .find_by_brand(params[:brand])
     .find_by_title(params[:title])
+    .find_by_description(params[:description])
     render json: @products
   end
 
