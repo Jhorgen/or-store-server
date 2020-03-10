@@ -28,9 +28,13 @@
   </div>
   <br/>
   <hr/>
-  <p><b>Total</b>
-    $<%= @purchase.amount %>
-  </p>
+  <div>
+    <b>Total</b>
+    Cart: $<%= @purchase.amount %>
+    Shipping: $<%= @purchase.shipping %>
+    <hr/>
+    $<%= @purchase.amount + @purchase.shipping %>
+  </div>
 
   <b>Purchased</b><br/>
   <% if @purchase.brand1 then %>
