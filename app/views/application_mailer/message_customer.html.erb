@@ -29,11 +29,10 @@
   <br/>
   <hr/>
   <div>
-    <b>Total</b>
     Cart: $<%= @purchase.amount %>
     Shipping: $<%= @purchase.shipping %>
     <hr/>
-    $<%= @purchase.amount + @purchase.shipping %>
+    <b>- $<%= @purchase.amount + @purchase.shipping %></b>
   </div>
 
   <b>Purchased</b><br/>
