@@ -1,93 +1,308 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
-      /* Email styles need to be inline */
-    </style>
-  </head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style>
+    /* Email styles need to be inline */
+  </style>
+</head>
 
-  <body>
-    <%= yield %>
-    <h2>Customer info</h2>
+<body>
+  <%= yield %>
+  <h2>Customer info</h2>
 
-    <% if @purchase.brand1 then %>
+  <h4>Payment & billing details</h4>
+  <hr/>
+
+  <div>
+    <p><b>Ship to</b></p>
+    <%= @purchase.firstname %>
+    <%= @purchase.lastname %>
+    <% if @purchase.address2 != "" then %>
     <div>
+      <%= @purchase.address2  %>
+    </div>
+    <% else %>
+    <%= @purchase.address %>
+    <% end %>
+  </div>
+  <br/>
+  <hr/>
+  <p><b>Total</b>
+    $<%= @purchase.amount %>
+  </p>
+
+  <b>Purchased</b><br/>
+  <% if @purchase.brand1 then %>
+
+    <span>
     <%= @purchase.brand1 %>
     <%= @purchase.title1 %>
-    <%= @purchase.quantity1 %>
-    </div>
-    <% end %>
-<br/>
-    <% if @purchase.brand2 then %>
+    <%= @purchase.selectedoption1 %>
+  </span>
+    <b>Quantity: <%= @purchase.quantity1 %></b>
+    <span>$<%= @purchase.price1 %></span>
+  <% end %>
+  <br/>
+  <% if @purchase.brand2 then %>
 
-    <%= @purchase.brand2 %>
-    <%= @purchase.title2 %>
-    <%= @purchase.quantity2 %>
+  <%= @purchase.brand2 %>
+  <%= @purchase.title2 %>
+  <%= @purchase.quantity2 %>
+  <%= @purchase.selectedoption2 %>
+  <%= @purchase.price2 %>
+  <% end %>
 
-    <% end %>
-    <br/>
+  <% if @purchase.brand3 then %>
 
-    <% if @purchase.brand3 then %>
+  <%= @purchase.brand3 %>
+  <%= @purchase.title3 %>
+  <%= @purchase.quantity3 %>
+  <%= @purchase.selectedoption3 %>
+  <%= @purchase.price3 %>
+  <% end %>
 
-    <%= @purchase.brand3 %>
-    <%= @purchase.title3 %>
-    <%= @purchase.quantity3 %>
+  <% if @purchase.brand4 then %>
 
-    <% end %>
-    <br/>
+  <%= @purchase.brand4 %>
+  <%= @purchase.title4 %>
+  <%= @purchase.quantity4 %>
+  <%= @purchase.selectedoption4 %>
+  <%= @purchase.price4 %>
+  <% end %>
 
-    <% if @purchase.brand4 then %>
+  <% if @purchase.brand5 then %>
 
-    <%= @purchase.brand4 %>
-    <%= @purchase.title4 %>
-    <%= @purchase.quantity4 %>
+  <%= @purchase.brand5 %>
+  <%= @purchase.title5 %>
+  <%= @purchase.quantity5 %>
+  <%= @purchase.selectedoption5 %>
+  <%= @purchase.price5 %>
+  <% end %>
 
-    <% end %>
-    <br/>
+  <% if @purchase.brand6 then %>
 
-    <% if @purchase.brand5 then %>
+  <%= @purchase.brand6 %>
+  <%= @purchase.title6 %>
+  <%= @purchase.quantity6 %>
+  <%= @purchase.selectedoption6 %>
+  <%= @purchase.price6 %>
+  <% end %>
 
-    <%= @purchase.brand5 %>
-    <%= @purchase.title5 %>
-    <%= @purchase.quantity5 %>
+  <% if @purchase.brand7 then %>
 
-    <% end %>
-    <br/>
+  <%= @purchase.brand7 %>
+  <%= @purchase.title7 %>
+  <%= @purchase.quantity7 %>
+  <%= @purchase.selectedoption7 %>
+  <%= @purchase.price7 %>
+  <% end %>
 
-    <% if @purchase.brand6 then %>
+  <% if @purchase.brand8 then %>
 
-    <%= @purchase.brand6 %>
-    <%= @purchase.title6 %>
-    <%= @purchase.quantity6 %>
+  <%= @purchase.brand8 %>
+  <%= @purchase.title8 %>
+  <%= @purchase.quantity8 %>
+  <%= @purchase.selectedoption8 %>
+  <%= @purchase.price8 %>
+  <% end %>
 
-    <% end %>
-    <br/>
+  <% if @purchase.brand9 then %>
 
-    <% if @purchase.brand7 then %>
+  <%= @purchase.brand9 %>
+  <%= @purchase.title9 %>
+  <%= @purchase.quantity9 %>
+  <%= @purchase.selectedoption9 %>
+  <%= @purchase.price9 %>
+  <% end %>
 
-    <%= @purchase.brand7 %>
-    <%= @purchase.title7 %>
-    <%= @purchase.quantity7 %>
+  <% if @purchase.brand10 then %>
 
-    <% end %>
-    <br/>
+  <%= @purchase.brand10 %>
+  <%= @purchase.title10 %>
+  <%= @purchase.quantity10 %>
+  <%= @purchase.selectedoption10 %>
+  <%= @purchase.price10 %>
+  <% end %>
 
-    <% if @purchase.brand8 then %>
+  <% if @purchase.brand11 then %>
 
-    <%= @purchase.brand8 %>
-    <%= @purchase.title8 %>
-    <%= @purchase.quantity8 %>
+  <%= @purchase.brand11 %>
+  <%= @purchase.title11 %>
+  <%= @purchase.quantity11 %>
+  <%= @purchase.selectedoption11 %>
+  <%= @purchase.price11 %>
+  <% end %>
 
-    <% end %>
-    <br/>
+  <% if @purchase.brand12 then %>
 
-    <% if @purchase.brand9 then %>
+  <%= @purchase.brand12 %>
+  <%= @purchase.title12 %>
+  <%= @purchase.quantity12 %>
+  <%= @purchase.selectedoption12 %>
+  <%= @purchase.price12 %>
+  <% end %>
 
-    <%= @purchase.brand9 %>
-    <%= @purchase.title9 %>
-    <%= @purchase.quantity9 %>
+  <% if @purchase.brand13 then %>
 
-    <% end %>
-    <br/>
-  </body>
+  <%= @purchase.brand13 %>
+  <%= @purchase.title13 %>
+  <%= @purchase.quantity13 %>
+  <%= @purchase.selectedoption13 %>
+  <%= @purchase.price13 %>
+  <% end %>
+
+  <% if @purchase.brand14 then %>
+
+  <%= @purchase.brand14 %>
+  <%= @purchase.title14 %>
+  <%= @purchase.quantity14 %>
+  <%= @purchase.selectedoption14 %>
+  <%= @purchase.price14 %>
+  <% end %>
+
+  <% if @purchase.brand15 then %>
+
+  <%= @purchase.brand15 %>
+  <%= @purchase.title15 %>
+  <%= @purchase.quantity15 %>
+  <%= @purchase.selectedoption15 %>
+  <%= @purchase.price15 %>
+  <% end %>
+
+  <% if @purchase.brand16 then %>
+
+  <%= @purchase.brand16 %>
+  <%= @purchase.title16 %>
+  <%= @purchase.quantity16 %>
+  <%= @purchase.selectedoption16 %>
+  <%= @purchase.price16 %>
+  <% end %>
+
+  <% if @purchase.brand17 then %>
+
+  <%= @purchase.brand17 %>
+  <%= @purchase.title17 %>
+  <%= @purchase.quantity17 %>
+  <%= @purchase.selectedoption17 %>
+  <%= @purchase.price17 %>
+  <% end %>
+
+  <% if @purchase.brand18 then %>
+
+  <%= @purchase.brand18 %>
+  <%= @purchase.title18 %>
+  <%= @purchase.quantity18 %>
+  <%= @purchase.selectedoption18 %>
+  <%= @purchase.price18 %>
+  <% end %>
+
+  <% if @purchase.brand19 then %>
+
+  <%= @purchase.brand19 %>
+  <%= @purchase.title19 %>
+  <%= @purchase.quantity19 %>
+  <%= @purchase.selectedoption19 %>
+  <%= @purchase.price19 %>
+  <% end %>
+
+  <% if @purchase.brand20 then %>
+
+  <%= @purchase.brand20 %>
+  <%= @purchase.title20 %>
+  <%= @purchase.quantity20 %>
+  <%= @purchase.selectedoption20 %>
+  <%= @purchase.price20 %>
+  <% end %>
+
+  <% if @purchase.brand21 then %>
+
+  <%= @purchase.brand21 %>
+  <%= @purchase.title21 %>
+  <%= @purchase.quantity21 %>
+  <%= @purchase.selectedoption21 %>
+  <%= @purchase.price21 %>
+  <% end %>
+
+  <% if @purchase.brand22 then %>
+
+  <%= @purchase.brand22 %>
+  <%= @purchase.title22 %>
+  <%= @purchase.quantity22 %>
+  <%= @purchase.selectedoption22 %>
+  <%= @purchase.price22 %>
+  <% end %>
+
+  <% if @purchase.brand23 then %>
+
+  <%= @purchase.brand23 %>
+  <%= @purchase.title23 %>
+  <%= @purchase.quantity23 %>
+  <%= @purchase.selectedoption23 %>
+  <%= @purchase.price23 %>
+  <% end %>
+
+  <% if @purchase.brand24 then %>
+
+  <%= @purchase.brand24 %>
+  <%= @purchase.title24 %>
+  <%= @purchase.quantity24 %>
+  <%= @purchase.selectedoption24 %>
+  <%= @purchase.price24 %>
+  <% end %>
+
+  <% if @purchase.brand25 then %>
+
+  <%= @purchase.brand25 %>
+  <%= @purchase.title25 %>
+  <%= @purchase.quantity25 %>
+  <%= @purchase.selectedoption25 %>
+  <%= @purchase.price25 %>
+  <% end %>
+
+  <% if @purchase.brand26 then %>
+
+  <%= @purchase.brand26 %>
+  <%= @purchase.title26 %>
+  <%= @purchase.quantity26 %>
+  <%= @purchase.selectedoption26 %>
+  <%= @purchase.price26 %>
+  <% end %>
+
+  <% if @purchase.brand27 then %>
+
+  <%= @purchase.brand27 %>
+  <%= @purchase.title27 %>
+  <%= @purchase.quantity27 %>
+  <%= @purchase.selectedoption27 %>
+  <%= @purchase.price27 %>
+  <% end %>
+
+  <% if @purchase.brand28 then %>
+
+  <%= @purchase.brand28 %>
+  <%= @purchase.title28 %>
+  <%= @purchase.quantity28 %>
+  <%= @purchase.selectedoption28 %>
+  <%= @purchase.price28 %>
+  <% end %>
+
+  <% if @purchase.brand29 then %>
+
+  <%= @purchase.brand29 %>
+  <%= @purchase.title29 %>
+  <%= @purchase.quantity29 %>
+  <%= @purchase.selectedoption29 %>
+  <%= @purchase.price29 %>
+  <% end %>
+
+  <% if @purchase.brand30 then %>
+
+  <%= @purchase.brand30 %>
+  <%= @purchase.title30 %>
+  <%= @purchase.quantity30 %>
+  <%= @purchase.selectedoption30 %>
+  <%= @purchase.price30 %>
+  <% end %>
+
+</body>

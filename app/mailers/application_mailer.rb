@@ -9,7 +9,7 @@ class ApplicationMailer < ActionMailer::Base
 
   def message_store(purchase)
     @purchase = purchase
-    mail(:to => "theouterrimshop@gmail.com", subject: 'Orb purchase')
+    mail(:to => "theouterrimshop@.sales@gmail.com", subject: 'Orb purchase')
   end
 
 end
