@@ -30,7 +30,7 @@
   <hr/>
   <div>
     Cart: $<%= @purchase.amount %>
-    Shipping: $<%= @purchase.shipping %>
+    Shipping: <%= number_to_currency(@purchase.shipping, :unit => "$") %>
     <hr/>
     <b>- $<%= @purchase.amount + @purchase.shipping %></b>
   </div>
