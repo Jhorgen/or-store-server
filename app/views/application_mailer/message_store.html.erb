@@ -29,12 +29,12 @@
   <br/>
   <hr/>
   <div>
-    <b>Total</b>
-    Cart: $<%= @purchase.amount %>
-    Shipping: <%= number_to_currency(@purchase.shipping, :unit => "$") %>
+    Cart: $<%= @purchase.amount %><br/>
+    Shipping: <%= number_to_currency(@purchase.shipping, :unit => "$") %><br/>
+    <b>- $<%= @purchase.amount + @purchase.shipping %></b>
     <hr/>
-    $<%= @purchase.amount + @purchase.shipping %>
   </div>
+  <br/>
 
   <b>Purchased</b><br/>
   <% if @purchase.brand1 then %>
