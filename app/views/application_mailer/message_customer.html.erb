@@ -11,7 +11,7 @@
   <%= yield %>
   <h2>Thank you for your purchase.</h2>
 
-  <h4>Payment & billing details</h4>
+  <p>Payment & billing details</p>
   <hr/>
 
   <div>
@@ -29,9 +29,9 @@
   <br/>
   <hr/>
   <div>
-    Cart: $<%= @purchase.amount %><br/>
+    Items: <%= number_to_currency(@purchase.amount, :unit => "$") %><br/>
     Shipping: <%= number_to_currency(@purchase.shipping, :unit => "$") %><br/>
-    <b>- $<%= @purchase.amount + @purchase.shipping %></b>
+    <b>Total: <%= number_to_currency(@purchase.amount + @purchase.shipping, :unit => "$") %></b>
     <hr/>
   </div>
   <br/>
@@ -45,7 +45,6 @@
     <%= @purchase.selectedoption1 %>
   </span>
     <b>Quantity: <%= @purchase.quantity1 %></b>
-    <span>$<%= @purchase.price1 %></span>
   <% end %>
   <br/>
   <% if @purchase.brand2 then %>
@@ -54,7 +53,6 @@
   <%= @purchase.title2 %>
   <%= @purchase.quantity2 %>
   <%= @purchase.selectedoption2 %>
-  <%= @purchase.price2 %>
   <% end %>
 
   <% if @purchase.brand3 then %>
@@ -63,7 +61,6 @@
   <%= @purchase.title3 %>
   <%= @purchase.quantity3 %>
   <%= @purchase.selectedoption3 %>
-  <%= @purchase.price3 %>
   <% end %>
 
   <% if @purchase.brand4 then %>
@@ -72,7 +69,6 @@
   <%= @purchase.title4 %>
   <%= @purchase.quantity4 %>
   <%= @purchase.selectedoption4 %>
-  <%= @purchase.price4 %>
   <% end %>
 
   <% if @purchase.brand5 then %>
@@ -81,7 +77,6 @@
   <%= @purchase.title5 %>
   <%= @purchase.quantity5 %>
   <%= @purchase.selectedoption5 %>
-  <%= @purchase.price5 %>
   <% end %>
 
   <% if @purchase.brand6 then %>
@@ -90,7 +85,6 @@
   <%= @purchase.title6 %>
   <%= @purchase.quantity6 %>
   <%= @purchase.selectedoption6 %>
-  <%= @purchase.price6 %>
   <% end %>
 
   <% if @purchase.brand7 then %>
@@ -99,7 +93,6 @@
   <%= @purchase.title7 %>
   <%= @purchase.quantity7 %>
   <%= @purchase.selectedoption7 %>
-  <%= @purchase.price7 %>
   <% end %>
 
   <% if @purchase.brand8 then %>
@@ -108,7 +101,6 @@
   <%= @purchase.title8 %>
   <%= @purchase.quantity8 %>
   <%= @purchase.selectedoption8 %>
-  <%= @purchase.price8 %>
   <% end %>
 
   <% if @purchase.brand9 then %>
@@ -117,7 +109,6 @@
   <%= @purchase.title9 %>
   <%= @purchase.quantity9 %>
   <%= @purchase.selectedoption9 %>
-  <%= @purchase.price9 %>
   <% end %>
 
   <% if @purchase.brand10 then %>
@@ -126,7 +117,6 @@
   <%= @purchase.title10 %>
   <%= @purchase.quantity10 %>
   <%= @purchase.selectedoption10 %>
-  <%= @purchase.price10 %>
   <% end %>
 
   <% if @purchase.brand11 then %>
@@ -135,7 +125,6 @@
   <%= @purchase.title11 %>
   <%= @purchase.quantity11 %>
   <%= @purchase.selectedoption11 %>
-  <%= @purchase.price11 %>
   <% end %>
 
   <% if @purchase.brand12 then %>
@@ -144,7 +133,6 @@
   <%= @purchase.title12 %>
   <%= @purchase.quantity12 %>
   <%= @purchase.selectedoption12 %>
-  <%= @purchase.price12 %>
   <% end %>
 
   <% if @purchase.brand13 then %>
@@ -153,7 +141,6 @@
   <%= @purchase.title13 %>
   <%= @purchase.quantity13 %>
   <%= @purchase.selectedoption13 %>
-  <%= @purchase.price13 %>
   <% end %>
 
   <% if @purchase.brand14 then %>
@@ -162,7 +149,6 @@
   <%= @purchase.title14 %>
   <%= @purchase.quantity14 %>
   <%= @purchase.selectedoption14 %>
-  <%= @purchase.price14 %>
   <% end %>
 
   <% if @purchase.brand15 then %>
@@ -171,7 +157,6 @@
   <%= @purchase.title15 %>
   <%= @purchase.quantity15 %>
   <%= @purchase.selectedoption15 %>
-  <%= @purchase.price15 %>
   <% end %>
 
   <% if @purchase.brand16 then %>
@@ -180,7 +165,6 @@
   <%= @purchase.title16 %>
   <%= @purchase.quantity16 %>
   <%= @purchase.selectedoption16 %>
-  <%= @purchase.price16 %>
   <% end %>
 
   <% if @purchase.brand17 then %>
@@ -189,7 +173,6 @@
   <%= @purchase.title17 %>
   <%= @purchase.quantity17 %>
   <%= @purchase.selectedoption17 %>
-  <%= @purchase.price17 %>
   <% end %>
 
   <% if @purchase.brand18 then %>
@@ -198,7 +181,6 @@
   <%= @purchase.title18 %>
   <%= @purchase.quantity18 %>
   <%= @purchase.selectedoption18 %>
-  <%= @purchase.price18 %>
   <% end %>
 
   <% if @purchase.brand19 then %>
@@ -207,7 +189,6 @@
   <%= @purchase.title19 %>
   <%= @purchase.quantity19 %>
   <%= @purchase.selectedoption19 %>
-  <%= @purchase.price19 %>
   <% end %>
 
   <% if @purchase.brand20 then %>
@@ -216,7 +197,6 @@
   <%= @purchase.title20 %>
   <%= @purchase.quantity20 %>
   <%= @purchase.selectedoption20 %>
-  <%= @purchase.price20 %>
   <% end %>
 
   <% if @purchase.brand21 then %>
@@ -225,7 +205,6 @@
   <%= @purchase.title21 %>
   <%= @purchase.quantity21 %>
   <%= @purchase.selectedoption21 %>
-  <%= @purchase.price21 %>
   <% end %>
 
   <% if @purchase.brand22 then %>
@@ -234,7 +213,6 @@
   <%= @purchase.title22 %>
   <%= @purchase.quantity22 %>
   <%= @purchase.selectedoption22 %>
-  <%= @purchase.price22 %>
   <% end %>
 
   <% if @purchase.brand23 then %>
@@ -243,7 +221,6 @@
   <%= @purchase.title23 %>
   <%= @purchase.quantity23 %>
   <%= @purchase.selectedoption23 %>
-  <%= @purchase.price23 %>
   <% end %>
 
   <% if @purchase.brand24 then %>
@@ -252,7 +229,6 @@
   <%= @purchase.title24 %>
   <%= @purchase.quantity24 %>
   <%= @purchase.selectedoption24 %>
-  <%= @purchase.price24 %>
   <% end %>
 
   <% if @purchase.brand25 then %>
@@ -261,7 +237,6 @@
   <%= @purchase.title25 %>
   <%= @purchase.quantity25 %>
   <%= @purchase.selectedoption25 %>
-  <%= @purchase.price25 %>
   <% end %>
 
   <% if @purchase.brand26 then %>
@@ -270,7 +245,6 @@
   <%= @purchase.title26 %>
   <%= @purchase.quantity26 %>
   <%= @purchase.selectedoption26 %>
-  <%= @purchase.price26 %>
   <% end %>
 
   <% if @purchase.brand27 then %>
@@ -279,7 +253,6 @@
   <%= @purchase.title27 %>
   <%= @purchase.quantity27 %>
   <%= @purchase.selectedoption27 %>
-  <%= @purchase.price27 %>
   <% end %>
 
   <% if @purchase.brand28 then %>
@@ -288,7 +261,6 @@
   <%= @purchase.title28 %>
   <%= @purchase.quantity28 %>
   <%= @purchase.selectedoption28 %>
-  <%= @purchase.price28 %>
   <% end %>
 
   <% if @purchase.brand29 then %>
@@ -297,7 +269,6 @@
   <%= @purchase.title29 %>
   <%= @purchase.quantity29 %>
   <%= @purchase.selectedoption29 %>
-  <%= @purchase.price29 %>
   <% end %>
 
   <% if @purchase.brand30 then %>
@@ -306,7 +277,6 @@
   <%= @purchase.title30 %>
   <%= @purchase.quantity30 %>
   <%= @purchase.selectedoption30 %>
-  <%= @purchase.price30 %>
   <% end %>
 
 </body>
